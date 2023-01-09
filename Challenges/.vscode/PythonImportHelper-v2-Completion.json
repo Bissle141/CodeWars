@@ -1,0 +1,56 @@
+[
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "is_square",
+        "kind": 2,
+        "importPath": "A_square_of_squares",
+        "description": "A_square_of_squares",
+        "peekOfCode": "def is_square(number):\n    return number > -1 and math.sqrt(number) % 1 == 0;",
+        "detail": "A_square_of_squares",
+        "documentation": {}
+    },
+    {
+        "label": "remove_vowels",
+        "kind": 2,
+        "importPath": "Disemvowel_Trolls",
+        "description": "Disemvowel_Trolls",
+        "peekOfCode": "def remove_vowels(string):\n    vowels = \"a e i o u A E I O U\".split(' ')\n    for letter in string:\n        if letter in vowels:\n            print(letter)\n            string = string.replace(letter, \"\")\n    return string\nprint(remove_vowels(\"\"\"No offense but,\nYour writing is among the worst I've ever read\"\"\"))",
+        "detail": "Disemvowel_Trolls",
+        "documentation": {}
+    },
+    {
+        "label": "which_quarter",
+        "kind": 2,
+        "importPath": "Quarter_of_the_year",
+        "description": "Quarter_of_the_year",
+        "peekOfCode": "def which_quarter():  \n    '''Will take in a number for the month, and determine what quarter of the year that month is in, then print a line detailing the result and return 1, 2, 3, or 4 depending on what quarter the month was in.'''\n    months = \"January,February,March,April,May,June,July,August,September,October,November,December\"\n    month_list = months.split(',')\n    valid = False\n    while valid == False:\n        month = input(\"Please input a month, in the form of a number (1-12): \\n\")\n        if month.isdigit():\n            month = int(month)\n            if month > 0 and month <= 12:",
+        "detail": "Quarter_of_the_year",
+        "documentation": {}
+    },
+    {
+        "label": "twoSum",
+        "kind": 2,
+        "importPath": "twoSum",
+        "description": "twoSum",
+        "peekOfCode": "def twoSum(nums, target):\n    \"\"\"\n    :type nums: List[int]\n    :type target: int\n    :rtype: List[int]\n    \"\"\"\n    for i in range(len(nums)):\n        num1 = nums[i]\n        num1_index = i\n        num2 = target - num1",
+        "detail": "twoSum",
+        "documentation": {}
+    },
+    {
+        "label": "likes",
+        "kind": 2,
+        "importPath": "Who_likes_it",
+        "description": "Who_likes_it",
+        "peekOfCode": "def likes(names):\n    sep = \", \"\n    if len(names) == 0:\n        return(\"no one likes this\")\n    elif len(names) == 1:\n        return(f\"{names[0]} likes this\")\n    elif len(names) > 1 and len(names) < 4:\n        return(f\"{sep.join(names[0:-1])} and {names[-1]} like this\")\n    else:\n        return(f\"{sep.join(names[0:2])} and {len(names) - 2} others like this\")",
+        "detail": "Who_likes_it",
+        "documentation": {}
+    }
+]
