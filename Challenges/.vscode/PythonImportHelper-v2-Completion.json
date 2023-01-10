@@ -9,6 +9,24 @@
         "documentation": {}
     },
     {
+        "label": "ListNode",
+        "kind": 6,
+        "importPath": "Add_Two_Numbers",
+        "description": "Add_Two_Numbers",
+        "peekOfCode": "class ListNode(object):\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\nclass Solution(object):\n    def addTwoNumbers(self, l1, l2):\n        \"\"\"\n        :type l1: ListNode\n        :type l2: ListNode\n        :rtype: ListNode",
+        "detail": "Add_Two_Numbers",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "Add_Two_Numbers",
+        "description": "Add_Two_Numbers",
+        "peekOfCode": "class Solution(object):\n    def addTwoNumbers(self, l1, l2):\n        \"\"\"\n        :type l1: ListNode\n        :type l2: ListNode\n        :rtype: ListNode\n        \"\"\"\n        # node1 = ListNode(val=6)\n        # print(node1.val)\n        current = root = ListNode()",
+        "detail": "Add_Two_Numbers",
+        "documentation": {}
+    },
+    {
         "label": "is_square",
         "kind": 2,
         "importPath": "A_square_of_squares",
